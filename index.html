@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>vue-timer</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+  <div id="app">
+    <div>
+      {{hours}} : {{minutes}} : {{seconds}} : {{milliSeconds}}
+    </div>
+    <div>
+      <button id="start" v-on:click="startTimer" v-bind:disabled="isStartButtonDisabled">start</button>
+      <button id="pause" v-on:click="pauseTimer" v-bind:disabled="isPauseButtonDisabled">pause</button>
+      <button id="clear" v-on:click="clearTimer" v-bind:disabled="isClearButtonDisabled">clear</button>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
